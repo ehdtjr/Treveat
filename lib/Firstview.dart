@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/kakao/login_view.dart';
 import 'package:flutter_app/tab/map.dart';
 import 'package:flutter_app/tab/list.dart';
 import 'package:flutter_app/tab/friend.dart';
 import 'package:flutter_app/tab/mypage.dart';
+
+String loc_code_='A1002';
 
 class Firstview extends StatefulWidget {
   @override
@@ -19,7 +22,7 @@ class _TestViewState extends State<Firstview>
     super.initState();
     _tabController = TabController(length: 4, vsync: this);
     _tabController.addListener(
-        () => setState(() => _selectedIndex = _tabController.index));
+            () => setState(() => _selectedIndex = _tabController.index));
   }
 
   @override
@@ -32,12 +35,14 @@ class _TestViewState extends State<Firstview>
   Widget build(BuildContext context) {
     return Scaffold(
       body: TabBarView(
+        physics: NeverScrollableScrollPhysics(),
         controller: _tabController,
         children: [
-          Map(),
-          List(),
+          //FormScreen(loc_code_),
+          MapScreen(),
+          ImageDisplay(),
           Friend(),
-          MyPage(),
+          login_view(),
         ],
       ),
       bottomNavigationBar: SizedBox(

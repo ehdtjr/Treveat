@@ -29,25 +29,28 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   flutter_rating_bar: ^4.0.1
-
   flutter:
     sdk: flutter
+#  kakao_flutter_sdk: ^1.5.0
   http: ^1.1.0
   json_annotation: ^4.4.0
   build_runner: ^2.0.5
   json_serializable: ^6.1.5
+  intl: ^0.18.1
 
   # freezed_annotation: ^2.4.1
-
-
-
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   firebase_core: ^2.14.0
-  image_picker: 1.0.1
-
+  image_picker: ^1.0.2
+  google_maps_flutter: ^2.4.0
+  dio: ^5.3.2
+  package_info: ^2.0.2
+  platform: ^3.1.2
+  shared_preferences: ^2.2.1
+  kakao_flutter_sdk_user: ^1.5.0
 
 dev_dependencies:
   flutter_test:

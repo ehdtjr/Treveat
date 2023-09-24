@@ -55,5 +55,18 @@
     <string>사진 라이브러리 사용에 필요합니다.</string>
     <key>UILaunchStoryboardName</key>
 
+    <key>LSApplicationQueriesSchemes</key>
+      <array>
+          <!-- common -->
+          <string>kakaoc2d639ef25b9728ebf587f4578467801</string>
+
+          <!-- KakaoTalk login -->
+          <string>kakaokompassauth</string>
+          <string>storykompassauth</string>
+
+          <!-- KakaoLink -->
+          <string>kakaolink</string>
+          <string>kakaotalk-5.9.7</string>
+      </array>
 </dict>
 </plist>
